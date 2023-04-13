@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module calculadora</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">calculadora</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:i%3A%5Cprogramacion%28trabajos%29%5Cpython%5Cpracticas%5Ccalculadora%5Ccalculadora.py">i:\programacion(trabajos)\python\practicas\calculadora\calculadora.py</a></td></tr></table>
+    <p><span class="code">Programa&nbsp;para&nbsp;crear&nbsp;una&nbsp;calculadora</span></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="tkinter.font.html">tkinter.font</a><br>
+</td><td class="multicolumn"><a href="tkinter.ttk.html">tkinter.ttk</a><br>
+</td><td class="multicolumn"></td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+    
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-adicionarComa"><strong>adicionarComa</strong></a>()</dt><dd><span class="code">Función&nbsp;para&nbsp;agregarle&nbsp;coma&nbsp;a&nbsp;algun&nbsp;número</span></dd></dl>
+ <dl><dt><a name="-adicionarNumero"><strong>adicionarNumero</strong></a>(textoviejo, textonuevo)</dt><dd><span class="code">Función&nbsp;para&nbsp;agregar&nbsp;un&nbsp;número&nbsp;a&nbsp;la&nbsp;entrada&nbsp;de&nbsp;la&nbsp;calculadora</span></dd></dl>
+ <dl><dt><a name="-borrar"><strong>borrar</strong></a>()</dt><dd><span class="code">Elimina&nbsp;el&nbsp;número&nbsp;y&nbsp;la&nbsp;operacion&nbsp;guardada&nbsp;en&nbsp;memoria</span></dd></dl>
+ <dl><dt><a name="-borrarUltimoNumero"><strong>borrarUltimoNumero</strong></a>()</dt><dd><span class="code">Borra&nbsp;el&nbsp;último&nbsp;número&nbsp;de&nbsp;la&nbsp;entrada</span></dd></dl>
+ <dl><dt><a name="-limpiarEntrada"><strong>limpiarEntrada</strong></a>()</dt><dd><span class="code">Elimina&nbsp;el&nbsp;número&nbsp;de&nbsp;la&nbsp;entrada</span></dd></dl>
+ <dl><dt><a name="-operacion"><strong>operacion</strong></a>(signoPasado)</dt><dd><span class="code">Asigna&nbsp;una&nbsp;operacion</span></dd></dl>
+ <dl><dt><a name="-signoIgual"><strong>signoIgual</strong></a>()</dt><dd><span class="code">Muestra&nbsp;el&nbsp;resultado&nbsp;de&nbsp;la&nbsp;operación</span></dd></dl>
+</td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+    
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>ACTIVE</strong> = 'active'<br>
+<strong>ALL</strong> = 'all'<br>
+<strong>ANCHOR</strong> = 'anchor'<br>
+<strong>ARC</strong> = 'arc'<br>
+<strong>BASELINE</strong> = 'baseline'<br>
+<strong>BEVEL</strong> = 'bevel'<br>
+<strong>BOTH</strong> = 'both'<br>
+<strong>BOTTOM</strong> = 'bottom'<br>
+<strong>BROWSE</strong> = 'browse'<br>
+<strong>BUTT</strong> = 'butt'<br>
+<strong>CASCADE</strong> = 'cascade'<br>
+<strong>CENTER</strong> = 'center'<br>
+<strong>CHAR</strong> = 'char'<br>
+<strong>CHECKBUTTON</strong> = 'checkbutton'<br>
+<strong>CHORD</strong> = 'chord'<br>
+<strong>COMMAND</strong> = 'command'<br>
+<strong>CURRENT</strong> = 'current'<br>
+<strong>DISABLED</strong> = 'disabled'<br>
+<strong>DOTBOX</strong> = 'dotbox'<br>
+<strong>E</strong> = 'e'<br>
+<strong>END</strong> = 'end'<br>
+<strong>EW</strong> = 'ew'<br>
+<strong>EXCEPTION</strong> = 8<br>
+<strong>EXTENDED</strong> = 'extended'<br>
+<strong>FALSE</strong> = 0<br>
+<strong>FIRST</strong> = 'first'<br>
+<strong>FLAT</strong> = 'flat'<br>
+<strong>GROOVE</strong> = 'groove'<br>
+<strong>HIDDEN</strong> = 'hidden'<br>
+<strong>HORIZONTAL</strong> = 'horizontal'<br>
+<strong>INSERT</strong> = 'insert'<br>
+<strong>INSIDE</strong> = 'inside'<br>
+<strong>LAST</strong> = 'last'<br>
+<strong>LEFT</strong> = 'left'<br>
+<strong>MITER</strong> = 'miter'<br>
+<strong>MOVETO</strong> = 'moveto'<br>
+<strong>MULTIPLE</strong> = 'multiple'<br>
+<strong>N</strong> = 'n'<br>
+<strong>NE</strong> = 'ne'<br>
+<strong>NO</strong> = 0<br>
+<strong>NONE</strong> = 'none'<br>
+<strong>NORMAL</strong> = 'normal'<br>
+<strong>NS</strong> = 'ns'<br>
+<strong>NSEW</strong> = 'nsew'<br>
+<strong>NUMERIC</strong> = 'numeric'<br>
+<strong>NW</strong> = 'nw'<br>
+<strong>OFF</strong> = 0<br>
+<strong>ON</strong> = 1<br>
+<strong>OUTSIDE</strong> = 'outside'<br>
+<strong>PAGES</strong> = 'pages'<br>
+<strong>PIESLICE</strong> = 'pieslice'<br>
+<strong>PROJECTING</strong> = 'projecting'<br>
+<strong>RADIOBUTTON</strong> = 'radiobutton'<br>
+<strong>RAISED</strong> = 'raised'<br>
+<strong>READABLE</strong> = 2<br>
+<strong>RIDGE</strong> = 'ridge'<br>
+<strong>RIGHT</strong> = 'right'<br>
+<strong>ROUND</strong> = 'round'<br>
+<strong>S</strong> = 's'<br>
+<strong>SCROLL</strong> = 'scroll'<br>
+<strong>SE</strong> = 'se'<br>
+<strong>SEL</strong> = 'sel'<br>
+<strong>SEL_FIRST</strong> = 'sel.first'<br>
+<strong>SEL_LAST</strong> = 'sel.last'<br>
+<strong>SEPARATOR</strong> = 'separator'<br>
+<strong>SINGLE</strong> = 'single'<br>
+<strong>SOLID</strong> = 'solid'<br>
+<strong>SUNKEN</strong> = 'sunken'<br>
+<strong>SW</strong> = 'sw'<br>
+<strong>TOP</strong> = 'top'<br>
+<strong>TRUE</strong> = 1<br>
+<strong>TclVersion</strong> = 8.6<br>
+<strong>TkVersion</strong> = 8.6<br>
+<strong>UNDERLINE</strong> = 'underline'<br>
+<strong>UNITS</strong> = 'units'<br>
+<strong>VERTICAL</strong> = 'vertical'<br>
+<strong>W</strong> = 'w'<br>
+<strong>WORD</strong> = 'word'<br>
+<strong>WRITABLE</strong> = 4<br>
+<strong>X</strong> = 'x'<br>
+<strong>Y</strong> = 'y'<br>
+<strong>YES</strong> = 1<br>
+<strong>boton0</strong> = &lt;tkinter.ttk.Button object .!button18&gt;<br>
+<strong>boton1</strong> = &lt;tkinter.ttk.Button object .!button13&gt;<br>
+<strong>boton2</strong> = &lt;tkinter.ttk.Button object .!button14&gt;<br>
+<strong>boton3</strong> = &lt;tkinter.ttk.Button object .!button15&gt;<br>
+<strong>boton4</strong> = &lt;tkinter.ttk.Button object .!button9&gt;<br>
+<strong>boton5</strong> = &lt;tkinter.ttk.Button object .!button10&gt;<br>
+<strong>boton6</strong> = &lt;tkinter.ttk.Button object .!button11&gt;<br>
+<strong>boton7</strong> = &lt;tkinter.ttk.Button object .!button5&gt;<br>
+<strong>boton8</strong> = &lt;tkinter.ttk.Button object .!button6&gt;<br>
+<strong>boton9</strong> = &lt;tkinter.ttk.Button object .!button7&gt;<br>
+<strong>botonAtras</strong> = &lt;tkinter.ttk.Button object .!button3&gt;<br>
+<strong>botonBorrar</strong> = &lt;tkinter.ttk.Button object .!button2&gt;<br>
+<strong>botonBorrarParcial</strong> = &lt;tkinter.ttk.Button object .!button&gt;<br>
+<strong>botonDivicion</strong> = &lt;tkinter.ttk.Button object .!button8&gt;<br>
+<strong>botonMultiplicacion</strong> = &lt;tkinter.ttk.Button object .!button12&gt;<br>
+<strong>botonPunto</strong> = &lt;tkinter.ttk.Button object .!button19&gt;<br>
+<strong>botonResta</strong> = &lt;tkinter.ttk.Button object .!button16&gt;<br>
+<strong>botonSigno</strong> = &lt;tkinter.ttk.Button object .!button17&gt;<br>
+<strong>botonSuma</strong> = &lt;tkinter.ttk.Button object .!button20&gt;<br>
+<strong>estilo</strong> = &lt;tkinter.ttk.Style object&gt;<br>
+<strong>hayNumero</strong> = True<br>
+<strong>labelOperacion</strong> = &lt;tkinter.ttk.Label object .!label&gt;<br>
+<strong>pantalla</strong> = &lt;tkinter.ttk.Entry object .!entry&gt;<br>
+<strong>resultado</strong> = 0<br>
+<strong>signo</strong> = ''<br>
+<strong>texto</strong> = &lt;tkinter.StringVar object&gt;<br>
+<strong>textoOperacion</strong> = &lt;tkinter.StringVar object&gt;<br>
+<strong>ultimoNumeroIntroducido</strong> = 0<br>
+<strong>ventana</strong> = &lt;tkinter.Tk object .&gt;</td></tr></table>
+</body></html>
