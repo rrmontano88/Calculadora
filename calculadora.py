@@ -3,7 +3,6 @@ from tkinter import *
 from tkinter import ttk, font
 
 
-
 def adicionarNumero(textoviejo, textonuevo):
     '''Función para agregar un número a la entrada de la calculadora'''
     global hayNumero
